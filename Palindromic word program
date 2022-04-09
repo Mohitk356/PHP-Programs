@@ -1,0 +1,23 @@
+<?php 
+function palindrom($str){
+$l = strlen($str)-1;
+$r = 0;
+$f = 0;
+
+while($l > $r){
+                if($str[$r] != $str[$l]){
+                                          $f=1;
+                                          break;
+                                        }
+                 $l--;
+                 $r++;
+              }
+  if($f==0){
+        echo 'String is palindromic';
+      }else{
+        echo 'String is not palindromic';
+      }
+}
+
+echo palindrom('civic');
+?>
