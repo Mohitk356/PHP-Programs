@@ -1,9 +1,10 @@
 <?php
 function fact($num){
-$x = 0;
-if($i=1;$i<=$num;$i++){
-$x *= $i;
+$x = 1;
+for($i=1;$i<=$num;$i++){
+ $x *= $i;
 }
+return $x;
 }
 echo fact(6);
 ?>
