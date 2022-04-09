@@ -1,0 +1,18 @@
+<?php 
+function palindrom($num){
+   $n = $num;
+   $x = 0;
+   while(floor($num)){
+          $remin = $num % 10;
+          $x = $x * 10 + $remin;
+          $num = $num/10;
+          }
+          if($x==$n){
+          echo 'Number is palindromic';
+          }else{
+          echo 'Number is not palindromic';
+          }
+}
+
+echo palindrom(123454321);
+?>
