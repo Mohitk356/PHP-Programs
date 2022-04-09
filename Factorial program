@@ -1,0 +1,9 @@
+<?php
+function fact($num){
+$x = 0;
+if($i=1;$i<=$num;$i++){
+$x *= $i;
+}
+}
+echo fact(6);
+?>
